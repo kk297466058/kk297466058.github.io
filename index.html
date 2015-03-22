@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 <div class="container">
 
@@ -10,12 +10,12 @@ layout: default
 		<p>最新文章</p>
 
 	<ul>
-			{% for post in site.posts %}
+		{% for post in site.posts %}
 		<li>
-			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-			<p>{{ post.description }}</p>
+		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+		<p>{{ post.description }}</p>
 		</li>
-			{% endfor %}
+		{% endfor %}
 		</ul>
 	</div>
 </div>
