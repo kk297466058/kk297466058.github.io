@@ -2,20 +2,21 @@
 layout: default
 title: 我的Blog
 ---
-
-<h2>{{ page.title }}</h2>
-
 <div class="container">
-<div class="row text-center">
-<p>最新文章</p>
 
-<ul>
-	{% for post in site.posts %}
-<li>
-	<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-	<p>{{ post.description }}</p>
-</li>
-	{% endfor %}
-</ul>
-</div>
+	<h2>{{ page.title }}</h2>
+
+	<div class="row text-center">
+
+		<p>最新文章</p>
+
+	<ul>
+			{% for post in site.posts %}
+		<li>
+			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+			<p>{{ post.description }}</p>
+		</li>
+			{% endfor %}
+		</ul>
+	</div>
 </div>
